@@ -88,7 +88,7 @@
                         </li>
             		    <?php }?>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes">合作加盟</a>
+                            <a class="nav-link" href="https://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes">合作加盟</a>
                         </li>
 						<li class="nav-item">
                             <a class="nav-link" href="/user/reg.php">注册</a>
@@ -336,7 +336,7 @@
                         <div class="app-4-connection">
                             <div class="newsletter">
                                 <form action="#" methos="GET" class="d-flex wrap-align">
-                                    <div class="button-style">联系客服获取优惠&nbsp;&nbsp;QQ：1931135643</div>
+                                    <div class="button-style">联系客服获取优惠&nbsp;&nbsp;QQ：<?php echo $conf['kfqq']?></div>
                                 </form>
 								</div>
                             <p class="mobile-text-app mt-4 pt-2"></p>
@@ -372,7 +372,7 @@
                                     <h3>帮助与支持</h3>
                                     <li><a href="./doc/index.html" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>对接文档</a></li>
                                     <li><a href="./agreement.html" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>服务条款</a></li>
-                                    <li><a href="https://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes"><i class="fa fa-angle-right" aria-hidden="true"></i>搭建本系统</a></li>
+                                    <li><a href="https://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes"><i class="fa fa-angle-right" aria-hidden="true"></i>搭建本系统</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4 col-6 column pl-sm-0">
@@ -694,25 +694,25 @@
                  var e = window.event || arguments[0];
                  //F12
                  if(e.keyCode == 123){
-                    alert("QQ：1931135643"); 
+                    alert("QQ：<?php echo $conf['kfqq']?>"); 
                     return false;
                  //Ctrl+Shift+I
                  }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
-                    alert("QQ：1931135643"); 
+                    alert("QQ：<?php echo $conf['kfqq']?>"); 
                     return false;
                  //Shift+F10
                  }else if((e.shiftKey) && (e.keyCode == 121)){
-                    alert("QQ：1931135643"); 
+                    alert("QQ：<?php echo $conf['kfqq']?>"); 
                     return false;
                  //Ctrl+U
                 }else if((e.ctrlKey) && (e.keyCode == 85)){
-                    alert("QQ：1931135643"); 
+                    alert("QQ：<?php echo $conf['kfqq']?>"); 
                     return false;
                  }
              };
              //屏蔽鼠标右键
              document.oncontextmenu = function (){
-                alert("QQ：1931135643"); 
+                alert("QQ：<?php echo $conf['kfqq']?>"); 
                 return false; 
              }
          }

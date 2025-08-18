@@ -60,7 +60,7 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li><a href="/">首页</a></li>
-                                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes" target="_blank">加盟合作</a></li>
+                                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes" target="_blank">加盟合作</a></li>
                                     
                                     <?php 
                                     	if ($conf['test_open']== 1) {
@@ -537,7 +537,7 @@
                                     </p>
                                 </div>
                                 <div class="cta__btn">
-                                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes" target="_blank" class="w-btn w-btn-white">QQ客服</a>
+                                    <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes" target="_blank" class="w-btn w-btn-white">QQ客服</a>
                                 </div>
                             </div>
                         </div>
@@ -584,7 +584,7 @@
                             <div class="footer__widget-content">
                                 <div class="footer__link footer__link-3">
                                     <ul>
-                                        <p style="color: white;"><a href="http://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes" target="_blank">QQ客服</a></p>
+                                        <p style="color: white;"><a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes" target="_blank">QQ客服</a></p>
                                         
                                     </ul>
                                 </div>

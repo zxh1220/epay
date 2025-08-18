@@ -246,7 +246,7 @@
                         <h1 class="text-white mb-4">客户支持</h1>
                         <p class="text-white mb-5 font-size-16">
                             有任何关于会员计划的疑问？联系我们的售前咨询小组，马上为您解答。我们将在您的订阅周期内为您提供一定程度上的技术支持。</p>
-                        <a href="https://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes" class="btn btn-lg btn-light fw-bold">联系我们</a>
+                        <a href="https://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes" class="btn btn-lg btn-light fw-bold">联系我们</a>
                     </div>
                 </div>
                 <!-- end col -->
@@ -309,7 +309,7 @@
                                 <h4 class="text-white font-size-18 mb-3 text-end">支持</h4>
                                 <ul class="list-unstyled footer-sub-menu">
                                     <li class="text-end">
-                                        <a href="https://wpa.qq.com/msgrd?v=3&uin=1931135643&site=qq&menu=yes" class="footer-link">联系我们</a>
+                                        <a href="https://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['kfqq']?>&site=qq&menu=yes" class="footer-link">联系我们</a>
                                     </li>
                                     <li class="text-end">
                                         <a href="./agreement.html" class="footer-link">服务条款</a>
