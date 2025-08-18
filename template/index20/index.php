@@ -315,7 +315,7 @@
                                         <a href="./agreement.html" class="footer-link">服务条款</a>
                                     </li>
                                     <li class="text-end">
-                                        <a href="https://pay-yzf.top/" class="footer-link">官方网站</a>
+                                        <a href="#" class="footer-link">官方网站</a>
                                     </li>
                                 </ul>
                             </div>

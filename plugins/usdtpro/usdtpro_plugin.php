@@ -8,7 +8,7 @@ class usdtpro_plugin
         'name'        => 'usdtpro',
         'showname'    => 'USDTPRO V2',
         'author'      => '浪子',
-        'link'        => 'https://pay-yzf.top/',
+        'link'        => '',
         'types'       => ['usdt','qqpay'],
         'inputs' => [
             'address' => [
@@ -53,13 +53,3 @@ class usdtpro_plugin
         require __DIR__ . '/leader.php';
     }
 }
-/* if(!isset($_SESSION['authcode'])){
-	$query = curl_get("http://886ds.top/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode);
-    if ($query = json_decode($query, true)) {
-		if ($query["code"] == 1) {
-			$_SESSION["authcode"] = authcode;
-		}else{
-			sysmsg("<h3>".$query["msg"]."</h3>", true);
-		}
-	}
-} */

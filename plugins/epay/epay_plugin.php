@@ -14,7 +14,7 @@ class epay_plugin
 
 		'author'      => '浪子', //支付插件作者
 
-		'link'        => 'https://pay-yzf.top/', //支付插件作者链接
+		'link'        => '', //支付插件作者链接
 
 		'types'       => ['alipay','qqpay','wxpay','bank','jdpay'], //支付插件支持的支付方式，可选的有alipay,qqpay,wxpay,bank
 

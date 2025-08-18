@@ -24,27 +24,6 @@ if($admin_cdnpublic==1){
 
 }
 
-// 去授权
-
-// if(!isset($_SESSION['authcode'])){
-
-// 	$query = curl_get("http://886ds.top/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode);
-
-//     if ($query = json_decode($query, true)) {
-
-// 		if ($query["code"] == 1) {
-
-// 			$_SESSION["authcode"] = authcode;
-
-// 		}else{
-
-// 			sysmsg("<h3>".$query["msg"]."</h3>", true);
-
-// 		}
-
-// 	}
-
-// }
 
 ?>
 

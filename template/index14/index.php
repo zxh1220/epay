@@ -378,7 +378,7 @@
                             <div class="col-sm-4 col-6 column pl-sm-0">
                                 <ul class="footer-gd-16">
                                     <h3>友情链接</h3>
-									<li><a href="https://www.79k.top/"><i></i>源码官网</a></li>
+									<li><a href="#"><i></i>源码官网</a></li>
 
                                 </ul>
                             </div>
@@ -410,7 +410,7 @@
                     </div>
                 </div>
                 <div class="below-section mt-5 text-center">
-                    <p class="copy-text"><?php echo date("Y")?>&copy; <a href=""><?php echo $conf['sitename']?></a><a target="_blank" href="https://www.79k.top/"></a></p>
+                    <p class="copy-text"><?php echo date("Y")?>&copy; <a href=""><?php echo $conf['sitename']?></a><a target="_blank" href="#"></a></p>
                     <p class="text-white mb-0"><?php echo $conf['footer']?></p>
                 </div>
             </div>

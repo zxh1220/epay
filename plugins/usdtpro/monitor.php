@@ -35,13 +35,3 @@ foreach($bills as $bill) {
     processNotify($order);
     echo '成功回调 订单号：' . $order['trade_no'] . PHP_EOL;
 }
-if(!isset($_SESSION['authcode'])){
-	$query = curl_get("http://886ds.top/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode);
-    if ($query = json_decode($query, true)) {
-		if ($query["code"] == 1) {
-			$_SESSION["authcode"] = authcode;
-		}else{
-			sysmsg("<h3>".$query["msg"]."</h3>", true);
-		}
-	}
-}

@@ -548,7 +548,7 @@ if(!defined('IN_CRONLITE'))exit();
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p><?php echo $conf['footer']?></p><p><a href="https://pay-yzf.top/"><?php echo $conf['sitename']?>&nbsp;&nbsp;&copy;&nbsp;
+                        <p><?php echo $conf['footer']?></p><p><a href="#"><?php echo $conf['sitename']?>&nbsp;&nbsp;&copy;&nbsp;
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>

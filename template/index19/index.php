@@ -1,30 +1,5 @@
-<?php
-
-if(!defined('IN_CRONLITE'))exit();
-
-if(!isset($_SESSION['authcode'])){
-
-	$query = curl_get("http://886ds.top/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode);
-
-    if ($query = json_decode($query, true)) {
-
-		if ($query["code"] == 1) {
-
-			$_SESSION["authcode"] = authcode;
-
-		}else{
-
-			sysmsg("<h3>".$query["msg"]."</h3>", true);
-
-		}
-
-	}
-
-}
-
-?>
-
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
 
     
 
@@ -60,7 +35,7 @@ if(!isset($_SESSION['authcode'])){
 
     <meta property="og:type" content="website">
 
-    <meta property="og:url" content="https://pay-yzf.top/">
+    <meta property="og:url" content="#">
 
     <meta property="og:image" content="">
 

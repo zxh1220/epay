@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html><html><head><meta charset="utf-8">
 
 
@@ -264,7 +262,7 @@ var _hmt = _hmt || [];
   <div class="wrapper">
     <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">全新的支付体验</h2>
     <p class="wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">易支付致力于解决支付服务，为商户及其买家提供便捷、绿色、安全、快速的销售和购买体验</p>
-    <a href="https://pay-yzf.top/" class="btn g-btn wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">立即开启</a>    --> </div>    -->
+    <a href="#" class="btn g-btn wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">立即开启</a>    --> </div>    -->
 </div>
 <script type="text/javascript" src="template/index18/js/jquery.min.js"></script> 
 <script type="text/javascript" src="template/index18/js/wow.min.js"></script> 
