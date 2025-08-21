@@ -1,1 +1,0 @@
-ALTER TABLE `pay_order` ADD `usdtpro` DECIMAL(10,5) NULL; 

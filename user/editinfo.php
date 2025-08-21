@@ -21,7 +21,7 @@ foreach ($fields as $field) {
 }
 
 if (!$check_version ) {
-	$add_sql = "ALTER TABLE pre_user ADD COLUMN `voice_version` tinyint(1) ZEROFILL NULL DEFAULT 0 ";
+	$add_sql = "ALTER TABLE pre_user ADD COLUMN `voice_version` tinyint(1) ZEROFILL NULL DEFAULT 1 ";
 	$DB->exec($add_sql);
 }
 
