@@ -1,0 +1,32 @@
+/* pages/clogin/clogin.wxss */
+.clogin-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200rpx;
+  box-sizing: border-box;
+}
+.clogin-userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.clogin-userinfo-avatar {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.clogin-userinfo-nickname {
+  margin-top: 40rpx;
+}
+.clogin-btngroup {
+  margin-top: 200rpx;
+}
+button {
+  margin-bottom: 55rpx;
+}

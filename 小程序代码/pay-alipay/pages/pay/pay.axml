@@ -1,0 +1,54 @@
+<view class="paycashier-container">
+  <block a:if="{{isPaySuccess}}">
+    <view class="paycashier-success-card">
+      <icon class="icon-box-img" type="success" size="90"></icon>
+      <view class="paycashier-success-msg">支付成功，请返回浏览器查看结果</view>
+    </view>
+    <view class="paycashier-button-container">
+      <button 
+        class="paycashier-close-button" 
+        type="ghost" 
+        onTap="exitApp">
+        关闭
+      </button>
+    </view>
+  </block>
+  <block a:else>
+    <view class="amount-card">
+      <view class="amount-label">需支付</view>
+      <view class="amount"><text class="amount-currency">￥</text> {{money}}</view>
+    </view>
+    <view class="info-card" a:if="{{ordername}}">
+      <view class="info-item">
+        <text class="info-label">商品名称</text>
+        <text class="info-content">{{ordername}}</text>
+      </view>
+    </view>
+    <view class="info-card">
+      <view class="info-item">
+        <text class="info-label">商户名称</text>
+        <text class="info-content">{{mchname}}</text>
+      </view>
+    </view>
+    <view class="paycashier-button-container">
+      <button 
+        class="paycashier-pay-button" 
+        type="primary" 
+        onTap="submitPay"
+        loading="{{loading}}"
+        disabled="{{disabled}}" a:if="{{!getPhoneNumber}}">
+        立即支付
+      </button>
+      <button 
+        class="paycashier-pay-button" 
+        type="primary" 
+        open-type="getAuthorize"
+        scope="phoneNumber"
+        onGetAuthorize="getPhoneNumber"
+        loading="{{loading}}"
+        a:if="{{getPhoneNumber}}">
+        登录并支付
+      </button>
+    </view>
+  </block>
+</view>

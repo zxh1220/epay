@@ -11,6 +11,21 @@ if(strlen($userrow['phone'])==11){
 	$userrow['phone']=substr($userrow['phone'],0,3).'****'.substr($userrow['phone'],7,10);
 }
 
+$fields = $DB->exec("SHOW COLUMNS FROM pre_user");
+$check_version = false;
+
+foreach ($fields as $field) {
+	if ("voice_version" === $field['Field']) {
+		$check_version = true;
+	}
+}
+
+if (!$check_version ) {
+	$add_sql = "ALTER TABLE pre_user ADD COLUMN `voice_version` tinyint(1) ZEROFILL NULL DEFAULT 0 ";
+	$DB->exec($add_sql);
+}
+
+
 ?>
 <input type="hidden" id="situation" value="">
  <div id="content" class="app-content" role="main">
